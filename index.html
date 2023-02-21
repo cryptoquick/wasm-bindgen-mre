@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <script type="module" src="pkg/wasm_test.js"></script>
     <script type="module">
-      import * as wasm_test from "./pkg/wasm_test.js";
+      import init, * as wasm_test from "./pkg/wasm_test.js";
+      init();
       wasm_test.hello("hello");
     </script>
     <title>WASM issue MRE</title>
